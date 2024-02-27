@@ -49,11 +49,12 @@ public class Main {
             }
             if (userLogIn) {
                 while (true) {
-                    System.out.println("\n1. View all books");
+                    System.out.println("\n1. View all new books");
                     System.out.println("2. Add a new book");
                     System.out.println("3. Search for a book by title");
                     System.out.println("4. Add books for sale");
-                    System.out.println("5. Exit");
+                    System.out.println("5. Buy book");
+                    System.out.println("6. Exit");
                     System.out.print("Enter your choice: ");
                     int choice = scanner.nextInt();
                     scanner.nextLine();
@@ -71,7 +72,8 @@ public class Main {
                         case 4:
                             Personal personal = new Personal();
                             personal.addBooksForSale();
-                        case 5:
+                            break;
+                        case 6:
                             System.out.println("Exiting...");
                             return;
                         default:
